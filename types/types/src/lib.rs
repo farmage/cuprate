@@ -28,6 +28,8 @@ pub use types::{
     OutputDistributionInput, OutputOnChain, TxInBlockchain, TxInPool, TxRelayChecks, TxsInBlock,
     VerifiedBlockInformation, VerifiedTransactionInformation,
 };
+pub mod anox;
+pub use anox::{BurnTransaction, MintTransaction, ValidatorSignature};
 
 //---------------------------------------------------------------------------------------------------- Feature-gated
 #[cfg(feature = "blockchain")]
